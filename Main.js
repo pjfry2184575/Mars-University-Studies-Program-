@@ -9,11 +9,8 @@ function toggleDarkMode() {
   body.classList.toggle('dark-mode');
 
   // Check if dark mode is active and save the preference
-  if (body.classList.contains('dark-mode')) {
-    setModePreference('dark');
-  } else {
-    setModePreference('light');
-  }
+  const isDarkMode = body.classList.contains('dark-mode');
+  setModePreference(isDarkMode ? 'dark' : 'light');
 }
 
 // Function to apply the saved mode preference on page load

@@ -17,28 +17,37 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  
   <!-- Custom Styles -->
   <link rel="stylesheet" href="Style.css">
 </head>
 
 <body>
-<!-- Dropdown Menu -->
-<div class="dropdown menu-button">
-  <button class="dropbtn">☰</button>
-  <div class="dropdown-content">
-    <a href="https://mars-university-studies-program.netlify.app/">Home</a>
-    <!-- Add more menu items as needed -->
+  <!-- Top Bar with Home, Toggle, and Menu Buttons -->
+  <div class="top-bar">
+<!-- Home Button -->
+<button onclick="window.location.href='https://mars-university-studies-program.netlify.app/';" class="home-button">Home</button>
+
+
+
+    <!-- Toggle Button -->
+    <button class="toggle-button" onclick="toggleDarkMode()">Toggle Dark/Light Mode</button>
+
+    <!-- Dropdown Menu -->
+    <div class="dropdown menu-button">
+      <button class="dropbtn">☰</button>
+      <div class="dropdown-content">
+        <a href="https://mars-university-studies-program.netlify.app/">Home</a>
+        <!-- Add more menu items as needed -->
+      </div>
+    </div>
   </div>
-</div>
 
   <div style="background-color: orange">
     <img src="https://gyazo.com/f3a78d637a5e9f839edaf73953f8fd97.png" alt="MU" height="250px" width="350px">
     <h1>Mars University Presents......</h1>
     <h3>The V.O.I.D.</h3>
   </div>
-<!-- Toggle Button -->
-  <button class="toggle-button" onclick="toggleDarkMode()">Toggle Dark/Light Mode</button>
 
   <!-- Nothing to see here... -->
   <p>Nothing to see here...</p>

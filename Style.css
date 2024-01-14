@@ -30,18 +30,26 @@ footer {
 
 /* Top bar styles */
 .top-bar {
-  background-color: #333; /* Change as needed */
+  background-color: #333;
   padding: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
+/* Home Button */
+.home-button {
+  order: -1; /* Move the home button to the left */
+}
+
+/* Toggle Button */
+.toggle-button {
+  margin-center: auto; /* Push the toggle button to the right */
+}
+
 /* Dropdown Button */
 .menu-button {
-  order: -1; /* Move the menu button to the left */
-  display: flex; /* Ensure the button takes up space */
-  align-items: center; /* Align items vertically */
+  position: relative; /* Ensure the button takes a relative position */
 }
 
 .menu-button .dropbtn {
@@ -56,7 +64,8 @@ footer {
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
-  left: 0; /* Set right to auto */
+  top: 100%; /* Position it below the button */
+  right: 0;
 }
 
 /* Links inside the dropdown */
@@ -75,9 +84,4 @@ footer {
 /* Show the dropdown menu on hover */
 .menu-button:hover .dropdown-content {
   display: block;
-}
-
-/* Toggle Button */
-.toggle-button {
-  margin-left: auto; /* Push the toggle button to the right */
 }

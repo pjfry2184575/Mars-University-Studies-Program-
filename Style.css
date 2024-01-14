@@ -21,14 +21,6 @@ body.dark-mode {
   color: #ffffff;
 }
 
-/* Media query for system preference */
-@media (prefers-color-scheme: dark) {
-  body {
-    background-color: #1a1a1a;
-    color: #ffffff;
-  }
-}
-
 footer {
   font-size: 10pt;
   text-align: center;

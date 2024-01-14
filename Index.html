@@ -33,14 +33,14 @@
     <!-- Toggle Button -->
     <button class="toggle-button" onclick="toggleDarkMode()">Toggle Dark/Light Mode</button>
 
-    <!-- Dropdown Menu -->
-    <div class="dropdown menu-button">
-      <button class="dropbtn">☰</button>
-      <div class="dropdown-content">
-        <a href="https://mars-university-studies-program.netlify.app/">Home</a>
-        <!-- Add more menu items as needed -->
-      </div>
-    </div>
+<!-- Dropdown Menu -->
+<div class="top-bar dropdown menu-button" onclick="toggleDropdown()">
+  <button class="dropbtn">☰</button>
+  <div class="dropdown-content">
+    <a href="https://mars-university-studies-program.netlify.app/">Home</a>
+    <!-- Add more menu items as needed -->
+  </div>
+</div>
   </div>
 
   <div style="background-color: orange">
@@ -54,6 +54,16 @@
 
   <!-- Project -->
   <script src="Main.js"></script>
+  
+  <script>
+  let dropdownVisible = false;
+
+  function toggleDropdown() {
+    dropdownVisible = !dropdownVisible;
+    const dropdownContent = document.querySelector('.dropdown-content');
+    dropdownContent.style.display = dropdownVisible ? 'block' : 'none';
+  }
+</script>
 </body>
 
 </html>

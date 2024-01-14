@@ -46,8 +46,14 @@ footer {
 }
 
 /* Dropdown Button */
-.dropdown {
+.menu-button {
   order: -1; /* Move the menu button to the left */
+  display: flex; /* Ensure the button takes up space */
+  align-items: center; /* Align items vertically */
+}
+
+.menu-button .dropbtn {
+  margin-right: 10px; /* Add margin as needed */
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -58,7 +64,7 @@ footer {
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
-  right: 0;
+  left: 0; /* Set right to auto */
 }
 
 /* Links inside the dropdown */
@@ -75,11 +81,11 @@ footer {
 }
 
 /* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
+.menu-button:hover .dropdown-content {
   display: block;
 }
 
 /* Toggle Button */
-.top-bar button {
+.toggle-button {
   margin-left: auto; /* Push the toggle button to the right */
 }

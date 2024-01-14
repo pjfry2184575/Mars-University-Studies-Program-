@@ -47,19 +47,19 @@ footer {
 
 /* Dropdown Button */
 .dropdown {
-  position: left;
+  position: relative; /* Change to relative */
   display: inline-block;
 }
 
 /* Dropdown Content (Hidden by Default) */
 .dropdown-content {
   display: none;
-  position: absolute;
+  position: absolute; /* Change to absolute */
   background-color: #f9f9f9;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
-  right: 0;
+  left: 0; /* Change to left */
 }
 
 /* Links inside the dropdown */

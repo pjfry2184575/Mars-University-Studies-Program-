@@ -1,8 +1,7 @@
 /* Common styles for both light and dark modes */
 body {
-  font-size: 16pt;
+  font-size: 14pt;
   text-align: center;
-  font-weight: bold;
 }
 
 h1, h2, h3 {

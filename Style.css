@@ -2,6 +2,7 @@
 body {
   font-size: 16pt;
   text-align: center;
+  font-weight: bold;
 }
 
 h1, h2, h3 {
@@ -11,13 +12,13 @@ h1, h2, h3 {
 
 /* Light mode styles */
 body {
-  background-color: #ffffff;
+  background-color: orange;
   color: #000000;
 }
 
 /* Dark mode styles */
 body.dark-mode {
-  background-color: #1a1a1a;
+  background-color: orange;
   color: #ffffff;
 }
 

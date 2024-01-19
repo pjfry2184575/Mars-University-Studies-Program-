@@ -1,14 +1,76 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+  <!-- Primary Meta Tags -->
+  <link rel="manifest" href="/manifest.json">
+
+  <title>Mars University Studies Program</title>
+  <meta name="title" content="Mars University Studies Program">
+  <meta name="Mars University Studies Program " content="A Future-Ready, Hypnotoad Approved, Self Sufficiency Mastery, Studies Program A better you for tomorrow!!!">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://bit.ly/Happy-Jump-Guide">
+  <meta property="og:title" content="Mars University Studies Program">
+  <meta property="og:description" content="A Future-Ready, Hypnotoad Approved, Self Sufficiency Mastery, Studies Program A better you for tomorrow!!!">
+  <meta property="og:image" content="https://gyazo.com/f3a78d637a5e9f839edaf73953f8fd97.png">
+
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="/Style.css">
 </head>
 
 <body>
+  <!-- Top Bar with Home, Toggle, and Menu Buttons -->
+  <div class="top-bar">
+    <!-- Home Button -->
+    <button onclick="window.location.href='https://mars-university-studies-program.netlify.app/';" class="home-button">Home</button>
 
+
+
+    <!-- Toggle Button -->
+    <button class="toggle-button" onclick="toggleDarkMode()">Toggle Dark/Light Mode</button>
+
+    <!-- Dropdown Menu -->
+    <div class="top-bar dropdown menu-button" onclick="toggleDropdown()">
+      <button class="dropbtn">☰</button>
+      <div class="dropdown-content">
+        <a href="/Menu/The_Program.html">The Program</a>
+        <!-- Add more menu items as needed -->
+      </div>
+    </div>
+  </div>
+
+ <p>
+   <img src="https://gyazo.com/efc0840bfe0fcb14f4c87880274c398f.png" alt="Thumbs up Trophy" height="250px" width="250px"<br>
+  <u style="background-color: orange" font-size="20px">Table of Contents</u>
+  <ol style="text-align: left">
+    1. Reaching lvl 15<br>
+2. The Deal/Beginning of the Program<br>
+3. After lvl 15<br>
+4. Routines<br>
+5. Battle Stats & NNB<br>
+6. Education<br>
+7. Art of War - Ranked, Territorial & Chaining<br>
+8. Conclusion
+    </ol>
+      </p>
+
+
+  <!-- Project -->
+  <script src="/Main.js"></script>
+
+  <script>
+    let dropdownVisible = false;
+
+    function toggleDropdown() {
+      dropdownVisible = !dropdownVisible;
+      const dropdownContent = document.querySelector('.dropdown-content');
+      dropdownContent.style.display = dropdownVisible ? 'block' : 'none';
+    }
+  </script>
 </body>
 
 </html>
